@@ -1,4 +1,4 @@
 rootProject.name = 'simpler-orm-jacksonadapter'
 
-include(':simpler-orm')
-project(':simpler-orm').projectDir = new File(settingsDir, '../simpler-orm')
+//include(':simpler-orm')
+//project(':simpler-orm').projectDir = new File(settingsDir, '../simpler-orm')
