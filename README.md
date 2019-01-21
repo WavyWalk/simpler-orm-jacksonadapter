@@ -1,15 +1,19 @@
 # What's it?
 A Jackson adapter for simpler-orm json serialization.
 # how to install
-It's not on the repo engines, so just clone it in your project PARENT folder.
-In your project's settings.graddle add:
-```groovy
-include ':simpler-orm-jackson-adapter'  
-project(':simpler-orm-jackson-adapter').projectDir = new File(settingsDir, "../simpler-orm-jackson-adapter")
-```
-In build.graddle:
-```groovy
-compile project(':simpler-orm-jackson-adapter')
+```kotlin
+//build.gradle
+repositories {
+    mavenCentral()
+    maven {
+        url  "https://dl.bintray.com/wavywalk/maven" //add this repo
+    }
+}
+
+dependencies {
+    compile 'at.wavywalk.simpler:simpler-orm-jacksonadapter:0.1.0:sources'
+    compile 'at.wavywalk.simpler:simpler-orm-jacksonadapter:0.1.0'
+}
 ```
 # How to use with simpler-orm
 When building `SimplerOrmDependenciesProvider`:

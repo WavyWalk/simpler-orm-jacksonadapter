@@ -5,9 +5,7 @@ import at.wavywalk.simpler.orm.dependencymanagement.adapterinterfaces.IArrayNode
 import at.wavywalk.simpler.orm.dependencymanagement.adapterinterfaces.IObjectNode
 import at.wavywalk.simpler.orm.dependencymanagement.adapterinterfaces.IToJsonSerializerObjectMapperAdapter
 
-/**
- * Created by Муса on 21.11.2017.
- */
+
 class JacksonObjectMapperAdapter :
     IToJsonSerializerObjectMapperAdapter {
     companion object {
